@@ -121,7 +121,6 @@ curl -X POST -H "Content-Type: application/json" -d "{\"question\":\"What is the
 ## Project Structure
 
 ```
-├── app/
 ├── config/
 │   └── config.yaml
 ├── data_ingestion/
