@@ -1,0 +1,15 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+langchain==0.0.339
+pinecone-client==2.2.4
+python-dotenv==1.0.0
+google-generativeai>=0.3.0
+numpy==1.24.3
+pandas==2.0.3
+PyPDF2==3.0.1
+python-multipart==0.0.6
+pydantic==2.4.2
+langchain-google-genai==0.0.5
+langchain_core
+langchain_community
+langchain_text_splitters

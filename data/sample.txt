@@ -1,0 +1,68 @@
+Problem Statement: Build a RAG-Based Question-Answering Chatbot with Containerized Deployment
+
+ 
+
+Objective:
+
+ 
+
+Develop a Retrieval-Augmented Generation (RAG) powered chatbot that can answer user questions based on a given set of documents. The solution must be implemented in Python, utilize a vector database for semantic search, and be delivered as a Docker container that can be run independently.
+
+ 
+
+Requirements:
+
+ 
+
+Document Ingestion and Preprocessing:
+Accept input documents in PDF, TXT, or CSV formats.
+Parse and chunk the content into manageable pieces.
+Generate embeddings using a suitable model such as Sentence Transformers or HuggingFace-based alternatives.
+ 
+
+Vector Database Integration:
+Store the document embeddings in a vector database like  ChromaDB, or FAISS.
+Implement semantic similarity search with optional metadata filtering (e.g., filename, document type, or section title).
+ 
+
+RAG-based Question-Answering System:
+Implement a RESTful API using FastAPI or Flask.
+The API should accept a user question, perform a similarity search to retrieve the top k relevant chunks, and pass them to a language model (e.g., OpenAI, HuggingFace LLM) to generate a final answer.
+ 
+
+Containerization with Docker:
+Package the entire solution into a Docker image.
+If required, use docker-compose.yml to manage multiple services (e.g., vector database and backend API).
+The container(s) should initialize all services and make the API accessible on a defined port.
+Ensure minimal base image usage for optimization and clarity.
+ 
+
+Documentation:
+ 
+
+Include a clear README.md that provides:
+Setup instructions
+Sample commands to build and run the container(s)
+Example input documents
+Example questions and expected outputs
+ 
+
+ 
+
+Expected Deliverables:
+
+Source code for the complete RAG system.
+Dockerfile(s) and optionally a docker-compose.yml.
+Input document samples and a small testing script.
+A packaged Docker image or GitHub repository.
+Deployment instructions
+ 
+
+Evaluation Criteria:
+
+Functional correctness of the RAG workflow
+Effective use and integration of the vector database
+API responsiveness and accuracy of results
+Code structure, readability, and modularity
+Containerization quality and ease of deployment
+Clarity and completeness of documentation

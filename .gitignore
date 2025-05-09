@@ -1,0 +1,11 @@
+.env
+/venv
+__pycache__
+/agentic_trading_system.egg-info
+*.egg
+*.whl
+*.zip
+requirements1.txt
+req.txt
+*.pyc
+*.pyo

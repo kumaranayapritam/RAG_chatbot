@@ -1,0 +1,18 @@
+vector_db:
+  index_name: "ragchatbot"
+
+retriever:
+  top_k: 3
+  score_threshold: 0.5
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+llm:
+  google:
+    provider: "google"
+    model_name: "gemini-1.5-pro"
+ 
+
+

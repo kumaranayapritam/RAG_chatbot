@@ -1,0 +1,8 @@
+.env
+/venv
+/agentic_trading_system.egg-info
+/__pycache__/
+\*.egg-info
+*.egg
+*.whl
+*.zip
